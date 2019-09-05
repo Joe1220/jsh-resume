@@ -12,7 +12,7 @@
 
 #### 1) nextjs 기반
 
-#### 2) Front library: NEXT
+#### 2) Front library: Nextjs, Typescript
 
 #### 3) State library: Mobx
 
