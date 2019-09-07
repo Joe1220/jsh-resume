@@ -1,8 +1,10 @@
 import React from "react"
+import { ThemeProvider } from "styled-components"
 import App from "next/app"
 import { Provider, observer } from "mobx-react"
 
 import rootStore from "../../stores/RootStore"
+import themes from "config/styles"
 
 @observer
 class CustomApp extends App {
@@ -14,7 +16,9 @@ class CustomApp extends App {
     const { Component, pageProps } = this.props
     return (
       <Provider {...rootStore}>
-        <Component {...pageProps} />
+        <ThemeProvider theme={themes}>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </Provider>
     )
   }
