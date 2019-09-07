@@ -17,9 +17,9 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "dev": "next ./src",
-    "build": "next build ./src",
-    "start": "next start ./src",
+    "dev": "rimraf ./next && next",
+    "build": "next build",
+    "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
@@ -30,8 +30,8 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-decorators": "^7.6.0",
     "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-info": "5.2.0-alpha.30",
-    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
     "@storybook/addon-links": "^5.1.11",
     "@storybook/addon-notes": "^5.1.11",
     "@storybook/addon-viewport": "^5.1.11",
