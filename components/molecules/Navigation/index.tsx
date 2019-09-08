@@ -7,10 +7,22 @@ const Navigation: React.FC = observer(() => {
   return (
     <Nav>
       <li>
-        <Link href="/">Lobby</Link>
+        <Link href="/">HOME</Link>
       </li>
       <li>
-        <A href="http://jshresume.co.nf/">About</A>
+        <Link href="/#ABOUT">ABOUT</Link>
+      </li>
+      <li>
+        <Link href="/#WORK">WORK</Link>
+      </li>
+      <li>
+        <Link href="/#EDUCATION">EDUCATION</Link>
+      </li>
+      <li>
+        <Link href="/#SKILLS">SKILLS</Link>
+      </li>
+      <li>
+        <Link href="/#PORTFOLIO">PORTFOLIO</Link>
       </li>
     </Nav>
   )

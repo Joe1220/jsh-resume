@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components"
 import Link from "next/link"
 
+import { UseHoverFadeIn } from "utils/hooks"
+
 interface IAProps {
   fontSize?: string
   sm?: boolean
@@ -10,6 +12,7 @@ interface IAProps {
 interface ILinkProps {
   href: string
   as?: string
+  className?: string
   children: React.ReactChild
   fontSize?: string
   sm?: boolean
@@ -17,17 +20,13 @@ interface ILinkProps {
 }
 
 const StyledLink = styled("a")<IAProps>`
-  font-size: ${props => props.theme.fontSize.lg};
+  font-size: ${props => props.theme.fontSize.base};
   font-weight: 700;
   color: ${props => props.theme.colors.black};
   text-decoration: none;
   background: inherit;
   box-sizing: border-box;
   display: block;
-
-  &:hover {
-    text-decoration: underline;
-  }
 
   ${props =>
     props.sm &&
@@ -42,10 +41,13 @@ const StyledLink = styled("a")<IAProps>`
     `}
 `
 
-const CustomLink: React.SFC<ILinkProps> = ({ href, as, children, ...props }) => {
+const CustomLink: React.SFC<ILinkProps> = ({ href, as, className, children, ...props }) => {
+  const halfFadeInHover = UseHoverFadeIn()
   return (
     <Link href={href} as={as}>
-      <StyledLink {...props}>{children}</StyledLink>
+      <StyledLink {...props} {...halfFadeInHover} className={className}>
+        {children}
+      </StyledLink>
     </Link>
   )
 }

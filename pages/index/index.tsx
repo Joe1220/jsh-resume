@@ -1,7 +1,3 @@
-import { Button } from "components/atoms"
+import { NavBar } from "components/organisms"
 
-export default () => (
-  <h1>
-    <Button>hell</Button>
-  </h1>
-)
+export default () => <NavBar />
