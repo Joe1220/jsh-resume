@@ -4,6 +4,7 @@ const myThemes: DefaultTheme = {
   colors: {
     white: "#FFFFFF",
     black: "#000000",
+    lightBlack: "#333333",
     grey: "#DCDCDC",
     blue: "#1E92D8",
     error: "#AA1E32"
