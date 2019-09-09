@@ -1,3 +1,10 @@
-import { NavBar } from "components/organisms"
+import BaseTemplate from "../../src/components/templates/BaseTemplate"
+import { Home } from "../../src/components/organisms"
 
-export default () => <NavBar />
+export default () => {
+  return (
+    <BaseTemplate nav>
+      <Home />
+    </BaseTemplate>
+  )
+}

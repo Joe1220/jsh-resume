@@ -21,3 +21,9 @@
 #### 4) Style: Styled-Components, CSS
 
 #### 5) Test: Enzyme, Jest
+
+## one page 구성
+
+#### 1) pages -> index 한 페이지로 전체 화면 출력
+
+#### 2) 내용에 들어간 화면들은 components -> organisms -> pages 폴더 내에 정리

@@ -14,11 +14,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "./",
-    "paths": {
-      "@Story/*": ["./.storybook/*"]
-    }
+    "baseUrl": "src"
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["src", "next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

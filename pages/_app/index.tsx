@@ -3,9 +3,9 @@ import { ThemeProvider } from "styled-components"
 import App from "next/app"
 import { Provider, observer } from "mobx-react"
 
-import rootStore from "stores/RootStore"
-import themes from "config/styles"
-import GlobalStyles from "config/styles/GlobalStyles"
+import rootStore from "../../src/stores/RootStore"
+import themes from "../../src/config/styles"
+import GlobalStyles from "../../src/config/styles/GlobalStyles"
 
 @observer
 class CustomApp extends App {
