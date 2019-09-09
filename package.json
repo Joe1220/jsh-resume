@@ -31,7 +31,7 @@
     "@babel/plugin-proposal-decorators": "^7.6.0",
     "@babel/preset-typescript": "^7.6.0",
     "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-info": "5.2.0-alpha.30",
     "@storybook/addon-knobs": "^5.1.11",
     "@storybook/addon-links": "^5.1.11",
     "@storybook/addon-notes": "^5.1.11",
