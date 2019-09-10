@@ -6,7 +6,7 @@ interface IHr {
 
 const Hr = styled("hr")<IHr>`
   width: 100%;
-  margin: 1rem 2.4rem;
+  margin: 2rem 2.4rem;
   color: transparent;
 
   ${props =>
