@@ -21,7 +21,7 @@ interface ILinkProps {
 
 const StyledLink = styled("a")<IAProps>`
   font-size: ${props => props.theme.fontSize.base};
-  font-weight: 700;
+  font-weight: 500;
   color: ${props => props.theme.colors.black};
   text-decoration: none;
   background: inherit;

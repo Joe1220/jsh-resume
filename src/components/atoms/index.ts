@@ -1,4 +1,6 @@
 export { default as P } from "./P"
+export { default as H1 } from "./H1"
+export { default as Hr } from "./Hr"
 export { default as Label } from "./Label"
 export { default as Button } from "./Button"
 export { default as Icon } from "./Icon"
