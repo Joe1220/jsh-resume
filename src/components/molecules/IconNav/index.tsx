@@ -12,9 +12,9 @@ const StyledSpan = styled("ul")`
     &:not(last-child) {
       margin-right: ${props => props.theme.spaces.xlg};
     }
-
+    path,
     svg {
-      color: ${props => props.color};
+      transition: fill 0.3s;
 
       &:hover {
         fill: ${props => props.theme.colors.purpleBlue};

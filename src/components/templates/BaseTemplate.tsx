@@ -9,6 +9,10 @@ interface IStyledBaseTemplate {
   nav?: boolean
 }
 
+interface IStyledContent {
+  minHeight?: string
+}
+
 const StyledBaseTemplate = styled("div")<IStyledBaseTemplate>`
   height: 100vh;
   width: 100%;
@@ -20,34 +24,48 @@ const StyledBaseTemplate = styled("div")<IStyledBaseTemplate>`
     props.backgroundImg &&
     css`
       background-image: url(${props.backgroundImg});
-      background-size: cover;
     `}
+
+  header {
+    position: fixed;
+    top: 0;
+  }
 `
 
-const StyledContent = styled("section")`
+const StyledContent = styled("div")<IStyledContent>`
   box-sizing: border-box;
   min-width: 920px;
   border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  ${props =>
+    props.minHeight &&
+    css`
+      min-height: ${props.minHeight};
+    `}
 `
 
-const StyledStaticComponent = styled("div")`
-  box-sizing: border-box;
-  padding: ${props => props.theme.spaces.lg};
-  header {
-    position: absolute;
-    top: 0;
-  }
+const StyledFooter = styled("footer")`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: ${props => props.theme.spaces.base};
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `
 
 export default observer(({ nav, backgroundImg, HeadComponent, children, Footer, ...props }) => (
   <StyledBaseTemplate {...props} backgroundImg={backgroundImg}>
     {nav && <NavBar />}
-    {HeadComponent && (
-      <StyledStaticComponent>
-        <HeadComponent />
-      </StyledStaticComponent>
-    )}
+    {HeadComponent && <HeadComponent />}
     <StyledContent {...props}>{children}</StyledContent>
-    {Footer && <Footer />}
+    {Footer && <StyledFooter>{Footer}</StyledFooter>}
   </StyledBaseTemplate>
 ))
