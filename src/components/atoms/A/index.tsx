@@ -1,10 +1,11 @@
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components"
 
 interface MyProps {
-  fontSize?: string;
-  sm?: boolean;
-  lg?: boolean;
-  href: string;
+  fontSize?: string
+  sm?: boolean
+  lg?: boolean
+  href: string
+  target?: string
 }
 
 const StyledA = styled("a")<MyProps>`
@@ -31,6 +32,10 @@ const StyledA = styled("a")<MyProps>`
     css`
       font-size: ${props => props.theme.fontSize.lg};
     `}
-`;
+`
 
-export default StyledA;
+StyledA.defaultProps = {
+  target: "_blank"
+}
+
+export default StyledA

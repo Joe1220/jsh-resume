@@ -1,17 +1,17 @@
-import styled, { css } from "styled-components";
+import styled, { css } from "styled-components"
 
-interface MyProps {
-  sm?: boolean;
-  lg?: boolean;
-  thick?: boolean;
-  blue?: boolean;
-  white?: boolean;
-  grey?: boolean;
-  error?: boolean;
-  overflowing?: boolean;
+interface IP {
+  sm?: boolean
+  lg?: boolean
+  thick?: boolean
+  blue?: boolean
+  white?: boolean
+  grey?: boolean
+  error?: boolean
+  overflowing?: boolean
 }
 
-export default styled("p")<MyProps>`
+export default styled("p")<IP>`
   font-size: ${props => props.theme.fontSize.base};
   font-weight: 500;
   margin: 0;
@@ -64,5 +64,4 @@ export default styled("p")<MyProps>`
       text-overflow: ellipsis;
       overflow: hidden;
     `}
-
-`;
+`
