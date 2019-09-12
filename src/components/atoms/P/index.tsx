@@ -1,12 +1,14 @@
 import styled, { css } from "styled-components"
 
-interface IP {
+export interface IP {
   sm?: boolean
   lg?: boolean
   thick?: boolean
+  lightBlack?: boolean
   blue?: boolean
   white?: boolean
   grey?: boolean
+  lightGrey?: boolean
   error?: boolean
   overflowing?: boolean
 }
@@ -14,6 +16,7 @@ interface IP {
 export default styled("p")<IP>`
   font-size: ${props => props.theme.fontSize.base};
   font-weight: 500;
+  line-height: 2;
   margin: 0;
 
   ${props =>
@@ -35,6 +38,12 @@ export default styled("p")<IP>`
     `}
 
   ${props =>
+    props.lightBlack &&
+    css`
+      color: ${props => props.theme.colors.lightBlack};
+    `}
+
+  ${props =>
     props.blue &&
     css`
       color: ${props => props.theme.colors.blue};
@@ -50,6 +59,12 @@ export default styled("p")<IP>`
     props.grey &&
     css`
       color: ${props => props.theme.colors.grey};
+    `}
+
+  ${props =>
+    props.lightGrey &&
+    css`
+      color: ${props => props.theme.colors.lightGrey};
     `}
 
   ${props =>
