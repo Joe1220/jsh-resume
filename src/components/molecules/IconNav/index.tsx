@@ -9,7 +9,7 @@ const StyledSpan = styled("ul")`
   display: flex;
 
   a {
-    &:not(last-child) {
+    &:not(:last-child) {
       margin-right: ${props => props.theme.spaces.xlg};
     }
     path,

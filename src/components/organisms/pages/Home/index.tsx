@@ -1,4 +1,4 @@
-import { BaseTemplte } from "components/templates"
+import { BaseTemplate } from "components/templates"
 import { H1, Hr, Link } from "components/atoms"
 import { DownArrow } from "components/atoms/Svg"
 import { IconNav } from "components/molecules"
@@ -6,7 +6,7 @@ import Theme from "config/styles"
 
 const Home: React.SFC = () => {
   return (
-    <BaseTemplte
+    <BaseTemplate
       backgroundImg={"/static/images/background.jpg"}
       minHeight="100vh"
       id="HOME"
@@ -21,7 +21,7 @@ const Home: React.SFC = () => {
       </H1>
       <Hr />
       <IconNav color={Theme.colors.white} />
-    </BaseTemplte>
+    </BaseTemplate>
   )
 }
 
