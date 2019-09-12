@@ -1,6 +1,7 @@
 import { ISvg } from "../"
+import Theme from "config/styles"
 
-const Mail: React.SFC<ISvg> = ({ size = "2.7rem", color }) => {
+const Mail: React.SFC<ISvg> = ({ size = Theme.fontSize.xlg, color }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
