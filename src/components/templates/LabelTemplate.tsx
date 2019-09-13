@@ -30,6 +30,7 @@ const StyledLabelContent = styled("div")<IStyledLabelContent>`
     `}
 
   .first-column {
+    min-width: 20%;
     @media (max-width: 768px) {
       display: none;
     }

@@ -22,7 +22,7 @@ const myThemes = {
   spaces: {
     inputPadding: ".375rem .75rem",
     buttonPadding: ".5rem .5rem",
-    resumeSectionPadding: "6.4rem 0 4rem 0",
+    resumeSectionPadding: "3.4rem 0 4rem 0",
     sm: "0.2rem",
     base: "0.5rem",
     lg: "1rem",

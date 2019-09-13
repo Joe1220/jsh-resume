@@ -41,66 +41,23 @@
       "summaries": ["프론트엔트(React, React-Native) 전체 담당", "일부 백엔드 api 개발 및 유지보수"]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "<ORGANIZATION_NAME>",
-      "position": "<POSITION>",
-      "website": "<WEBSITE>",
-      "startDate": "<START_DATE>",
-      "endDate": "<END_DATE>",
-      "summary": "<SUMMARY>",
-      "highlights": ["<HIGHTLIGHT_1>", "<HIGHTLIGHT_2>", "<HIGHTLIGHT_3>"]
-    }
-  ],
   "education": [
     {
-      "institution": "INHA Technical College",
-      "area": "Incheon /",
-      "studyType": "Architecture",
-      "startDate": "2009-02",
-      "endDate": "2015-02",
-      "gpa": "3.57/4.5",
-      "summary": "건축 전공 /",
-      "courses": ["건축학", "<COURSE_2>", "<COURSE_3>"]
+      "title": "INHA Technical College",
+      "subInfo": ["Incheon", "건축 전공"],
+      "date": "2009-02, 2015-02",
+      "summaries": []
     },
     {
-      "institution": "코드스테이츠(CodeStates)",
-      "area": "Seoul /",
-      "studyType": "Web Programming",
-      "startDate": "2017-08",
-      "endDate": "2018-03",
-      "gpa": "",
-      "summary": "웹 개발자 교육 /",
-      "courses": [
-        "1개월 Pre-Course: HTML/CSS, JavaScript의 기초 문법을 학습",
-        "다양한 라이브러리 함수 공부",
-        "3개월 Immersive-Course: Data Modeling and Classes, Data Structures and Complexity Analysis",
-        "ES6 APIs and React, Redux, Servers, Node, Databases 학습"
+      "title": "코드스테이츠(CodeStates)",
+      "area": ["Seoul", "웹 개발자 교육"],
+      "date": "2017-08, 2018-03",
+      "summaries": [
+        "Pre-Course: HTML/CSS, JavaScript의 기초 문법을 학습",
+        "Immersive-Course: Data Modeling and Classes, Data Structures and Complexity Analysis",
+        "Back-End: Express.js, Deploy(AWS, Heroku)",
+        "Front-End: React.js, jQuery, ajax"
       ]
-    },
-    {
-      "institution": "",
-      "area": "Pre-Course: HTML/CSS, JavaScript의 기초 문법을 학습"
-    },
-    {
-      "institution": "",
-      "area": "Immersive-Course: Data Modeling and Classes, Data Structures and Complexity Analysis"
-    },
-    {
-      "institution": "",
-      "area": "Back-End: Express.js, Deploy(AWS, Heroku)"
-    },
-    {
-      "institution": "",
-      "area": "Front-End: React.js, jQuery, ajax"
-    }
-  ],
-  "awards": [
-    {
-      "title": "<AWARD_TITLE>",
-      "date": "<DATE>",
-      "awarder": "<AWARDER>",
-      "summary": "<SUMMARY>"
     }
   ],
   "projects": [
