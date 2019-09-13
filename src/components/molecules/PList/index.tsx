@@ -11,6 +11,7 @@ export interface IPList extends IP {
 const StyledPList = styled("div")`
   display: flex;
   flex-direction: column;
+  margin: 12px 0 30px 0;
 
   p > span {
     margin-bottom: ${props => props.theme.spaces.lg};

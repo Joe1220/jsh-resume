@@ -11,12 +11,11 @@ interface ILabel {
 }
 
 const StyledLabel = styled("label")<ILabel>`
-  display: block;
+  display: inline-block;
   font-size: ${props => props.theme.fontSize.base};
   font-weight: 500;
   color: ${props => props.theme.colors.black};
   margin-bottom: ${props => props.theme.spaces.sm};
-  display: inline-block;
 
   ${props =>
     props.sm &&

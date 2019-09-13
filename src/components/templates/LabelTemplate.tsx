@@ -7,26 +7,29 @@ interface IStyledLabelTemplate {
   bgColor?: string
 }
 
+interface IStyledLabelContent {
+  bottomColor?: boolean
+}
+
 const StyledLabelTemplate = styled("div")<IStyledLabelTemplate>`
   width: 100%;
   background: ${props => props.bgColor};
   padding: ${props => props.theme.spaces.resumeSectionPadding};
 `
 
-const StyledLabelContent = styled("div")`
+const StyledLabelContent = styled("div")<IStyledLabelContent>`
   width: 100%;
   max-width: ${props => props.theme.widths.labelContentMaxWidth};
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-
-  div {
-    margin-bottom: ${props => props.theme.spaces.lg};
-  }
+  ${props =>
+    props.bottomColor &&
+    css`
+      border-bottom: 1px solid rgb(232, 232, 232);
+    `}
 
   .first-column {
-    display: flex;
-    justify-content: center;
     @media (max-width: 768px) {
       display: none;
     }
@@ -36,15 +39,13 @@ const StyledLabelContent = styled("div")`
     margin-left: ${props => props.theme.spaces.xxlg};
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
   }
 `
 
-export default ({ bgColor = Theme.colors.white, children, ...props }) => {
+export default ({ bgColor = Theme.colors.white, children, bottomColor = false, ...props }) => {
   return (
     <StyledLabelTemplate bgColor={bgColor} {...props}>
-      <StyledLabelContent>{children}</StyledLabelContent>
+      <StyledLabelContent bottomColor={bottomColor}>{children}</StyledLabelContent>
     </StyledLabelTemplate>
   )
 }

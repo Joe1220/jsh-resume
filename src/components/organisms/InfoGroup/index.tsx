@@ -1,18 +1,25 @@
 import styled from "styled-components"
 
-import { Label, Hr } from "components/atoms"
+import { Label, Hr, A } from "components/atoms"
 import { PList, SeparateTexts } from "components/molecules"
-import { ubInfoLastIndexChange } from "utils/date"
+import { dateChangeFormatList } from "utils/date"
 
 interface IInfoGroup {
   title: string
+  website?: string
   subInfo: string[]
   summaries: string[]
-  reverse?: boolean
   bottomLine?: boolean
   date?: string
   firstCustomSeparate?: string
   secondCustomSeparate?: string
+}
+
+interface IInfoGroups {
+  infos: IInfoGroup[]
+  firstCustomSeparate?: string
+  secondCustomSeparate?: string
+  bottomLine?: boolean
 }
 
 const StyledInfoGroup = styled("div")`
@@ -20,6 +27,12 @@ const StyledInfoGroup = styled("div")`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+
+  div {
+    &:not(:last-child) {
+      margin-bottom: ${props => props.theme.spaces.xlg};
+    }
+  }
 `
 
 /**
@@ -31,35 +44,43 @@ const StyledInfoGroup = styled("div")`
  */
 const InfoGroup: React.SFC<IInfoGroup> = ({
   title = "title",
+  website = "https://www.psa-ict.co.kr/main/main.psa",
   subInfo = ["web engineer, frontend 개발자"],
   summaries = ["프론트엔트(React, React-Native) 전체 담당", "일부 백엔드 api 개발 및 유지보수"],
   date,
-  reverse,
   firstCustomSeparate,
   secondCustomSeparate,
   bottomLine
 }) => {
-  const customInfo = date ? ubInfoLastIndexChange(subInfo) : subInfo
+  const customInfo = date ? [...subInfo, dateChangeFormatList(date)] : subInfo
+  return (
+    <div>
+      {website ? (
+        <A href={website}>
+          <Label lg thick>
+            {title}
+          </Label>
+        </A>
+      ) : (
+        <Label lg thick>
+          {title}
+        </Label>
+      )}
+      <SeparateTexts texts={customInfo} customSeparate={firstCustomSeparate} />
+      <PList texts={summaries} customSeparate={secondCustomSeparate} />
+      {bottomLine && <Hr />}
+    </div>
+  )
+}
+
+const InfoGroups: React.SFC<IInfoGroups> = ({ infos, ...props }) => {
   return (
     <StyledInfoGroup>
-      <Label lg thick white={reverse}>
-        {title}
-      </Label>
-      <SeparateTexts
-        texts={customInfo}
-        lightGrey={reverse}
-        lightBlack={!reverse}
-        customSeparate={firstCustomSeparate}
-      />
-      <PList
-        texts={summaries}
-        grey={reverse}
-        lightBlack={!reverse}
-        customSeparate={secondCustomSeparate}
-      />
-      {bottomLine && <Hr />}
+      {infos.map(info => (
+        <InfoGroup {...info} {...props} />
+      ))}
     </StyledInfoGroup>
   )
 }
 
-export default InfoGroup
+export default InfoGroups
