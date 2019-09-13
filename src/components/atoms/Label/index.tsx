@@ -7,6 +7,7 @@ interface ILabel {
   blue?: boolean
   white?: boolean
   thick?: boolean
+  bottomColor?: boolean
 }
 
 const StyledLabel = styled("label")<ILabel>`
@@ -15,6 +16,7 @@ const StyledLabel = styled("label")<ILabel>`
   font-weight: 500;
   color: ${props => props.theme.colors.black};
   margin-bottom: ${props => props.theme.spaces.sm};
+  display: inline-block;
 
   ${props =>
     props.sm &&
@@ -50,6 +52,14 @@ const StyledLabel = styled("label")<ILabel>`
     props.thick &&
     css`
       font-weight: 700;
+    `}
+
+  ${props =>
+    props.bottomColor &&
+    css`
+      text-decoration: none;
+      border-bottom: 2px solid ${props => props.theme.spaces.blue};
+      padding-bottom: 8px;
     `}
 
 `
