@@ -60,6 +60,52 @@
       ]
     }
   ],
+  "skills": [
+    {
+      "title": "skills",
+      "summaries": [
+        "HTML",
+        "Style:  주로 styled-components을 사용하며 scss도 사용합니다.",
+        "Javascript: Typescript와 같이 Front에서 다양한 이벤트, 스타일 구성을 담당합니다. React를 사용합니다.",
+        "Mobx: data state 관리. store와 model, repository(비즈니스 역할)분할",
+        "Git: bitbucket을 이용한 프로젝트 관리. github도 사용합니다.",
+        "React: Component구성, Router 처리, mobx를 이용한 state구성",
+        "React-Native: android 버전개발, navigation 구성",
+        "Koa: api개발, middleware 처리, sequelize를 이용한 model구성. swagger를 사용하여 api 자동화",
+        "AWS: 배포할 때 사용합니다. ec2, nginx을 이용합니다."
+      ],
+      "skillDetails": [
+        {
+          "name": "Javascript",
+          "percent": "80%"
+        },
+        {
+          "name": "Mobx",
+          "percent": "80%"
+        },
+        {
+          "name": "React",
+          "percent": "70%"
+        },
+        {
+          "name": "React-Native",
+          "percent": "65%"
+        },
+        {
+          "name": "styled-components",
+          "percent": "55%"
+        },
+        {
+          "name": "Koa(node)",
+          "percent": "50%"
+        },
+        {
+          "name": "SASS(scss)",
+          "percent": "50%"
+        }
+      ]
+    }
+  ],
   "projects": [
     {
       "name": "Web Chat(TOY)",
@@ -99,59 +145,6 @@
         "thumb": "https://lh3.googleusercontent.com/UHFkk-NO7Pc78bIyzRNBQOM2rr96qnRdr7HGADlip3dDJejwoVpuZdTKbixmNsHfmSc"
       },
       "keywords": ["React", "React-Native", "Koa", "Mobx", "Styled-Components", "Nginx", "firebase"]
-    }
-  ],
-  "skills": [
-    {
-      "title": "Programming Languages",
-      "description": [
-        "HTML",
-        "Style:  주로 styled-components을 사용하며 scss도 사용합니다.",
-        "Javascript: 주력 언어입니다. Front상에서 다양한 이벤트, 스타일 구성을 담당합니다. React를 사용합니다.",
-        "Mobx: data state 관리. store와 model, repository(비즈니스 역할)분할",
-        "Git: bitbucket을 이용한 프로젝트 관리. github도 사용합니다.",
-        "React: Component구성, Router 처리, mobx를 이용한 state구성",
-        "React-Native: android 버전개발, navigation 구성",
-        "Koa: api개발, middleware 처리, sequelize를 이용한 model구성. swagger를 사용하여 api 자동화",
-        "AWS: 배포할 때 사용합니다. ec2, nginx을 이용합니다."
-      ],
-      "skillDetails": [
-        {
-          "name": "Javascript",
-          "level": "80",
-          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
-        },
-        {
-          "name": "Mobx",
-          "level": "80",
-          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
-        },
-        {
-          "name": "React",
-          "level": "70",
-          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
-        },
-        {
-          "name": "React-Native",
-          "level": "65",
-          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
-        },
-        {
-          "name": "styled-components",
-          "level": "55",
-          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
-        },
-        {
-          "name": "Koa(node)",
-          "level": "50",
-          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
-        },
-        {
-          "name": "SASS(scss)",
-          "level": "50",
-          "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
-        }
-      ]
     }
   ],
   "languages": [

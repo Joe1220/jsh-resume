@@ -7,7 +7,7 @@ import { dateChangeFormatList } from "utils/date"
 interface IInfoGroup {
   title: string
   website?: string
-  subInfo: string[]
+  subInfo?: string[]
   summaries: string[]
   bottomLine?: boolean
   date?: string
@@ -45,14 +45,14 @@ const StyledInfoGroup = styled("div")`
 const InfoGroup: React.SFC<IInfoGroup> = ({
   title = "title",
   website = "https://www.psa-ict.co.kr/main/main.psa",
-  subInfo = ["web engineer, frontend 개발자"],
+  subInfo,
   summaries = ["프론트엔트(React, React-Native) 전체 담당", "일부 백엔드 api 개발 및 유지보수"],
   date,
   firstCustomSeparate,
   secondCustomSeparate,
   bottomLine
 }) => {
-  const customInfo = date ? [...subInfo, dateChangeFormatList(date)] : subInfo
+  const customInfo = date && subInfo ? [...subInfo, dateChangeFormatList(date)] : subInfo
   return (
     <div>
       {website ? (
@@ -66,7 +66,7 @@ const InfoGroup: React.SFC<IInfoGroup> = ({
           {title}
         </Label>
       )}
-      <SeparateTexts texts={customInfo} customSeparate={firstCustomSeparate} />
+      {subInfo && <SeparateTexts texts={customInfo} customSeparate={firstCustomSeparate} />}
       <PList texts={summaries} customSeparate={secondCustomSeparate} />
       {bottomLine && <Hr />}
     </div>
