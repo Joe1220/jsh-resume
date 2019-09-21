@@ -20,6 +20,12 @@ const StyledBaseTemplate = styled("div")<IStyledBaseTemplate>`
   flex-direction: column;
   box-sizing: border-box;
 
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.6rem;
+    }
+  }
+
   ${props =>
     props.backgroundImg &&
     css`
