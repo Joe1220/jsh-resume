@@ -5,9 +5,9 @@ import { wInfo } from "../src/utils/storybook"
 
 storiesOf("Welcome", module).add(
   "to your new Storybook🎊",
-  () => <div>This is web chat!</div>,
+  () => <div>This is 조승현's(Jo Seung Hyun)resume!</div>,
   wInfo(`
     ### Notes
-     This is a Typescript + Socket Web Chat!
+     This is a Typescript + hooks 조승현's(Jo Seung Hyun)resume!
   `)
 )
