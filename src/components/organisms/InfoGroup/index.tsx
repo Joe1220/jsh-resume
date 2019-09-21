@@ -76,8 +76,8 @@ const InfoGroup: React.SFC<IInfoGroup> = ({
 const InfoGroups: React.SFC<IInfoGroups> = ({ infos, ...props }) => {
   return (
     <StyledInfoGroup>
-      {infos.map(info => (
-        <InfoGroup {...info} {...props} />
+      {infos.map((info, index) => (
+        <InfoGroup key={index} {...info} {...props} />
       ))}
     </StyledInfoGroup>
   )
