@@ -1,5 +1,5 @@
-import BaseTemplate from "../../src/components/templates/BaseTemplate"
-import { Home, About, Work, Education, Skills } from "../../src/components/organisms"
+import BaseTemplate from "components/templates/BaseTemplate"
+import { Home, About, Work, Education, Skills, Portfolio } from "components/organisms"
 
 export default () => {
   return (
@@ -9,6 +9,7 @@ export default () => {
       <Work />
       <Education />
       <Skills />
+      <Portfolio />
     </BaseTemplate>
   )
 }

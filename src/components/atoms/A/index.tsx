@@ -16,6 +16,7 @@ const StyledA = styled("a")<MyProps>`
   background: inherit;
   box-sizing: border-box;
   display: block;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;

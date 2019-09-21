@@ -11,10 +11,10 @@ interface IStyledBaseTemplate {
 
 interface IStyledContent {
   minHeight?: string
+  templateStyle?: any
 }
 
 const StyledBaseTemplate = styled("div")<IStyledBaseTemplate>`
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,11 +30,14 @@ const StyledBaseTemplate = styled("div")<IStyledBaseTemplate>`
     position: fixed;
     top: 0;
   }
+
+  label {
+    margin-bottom: ${props => props.theme.spaces.lg};
+  }
 `
 
 const StyledContent = styled("div")<IStyledContent>`
   box-sizing: border-box;
-  min-width: 920px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -46,6 +49,8 @@ const StyledContent = styled("div")<IStyledContent>`
     css`
       min-height: ${props.minHeight};
     `}
+
+  ${props => props.templateStyle};
 `
 
 const StyledFooter = styled("footer")`
@@ -61,11 +66,13 @@ const StyledFooter = styled("footer")`
   align-items: center;
 `
 
-export default observer(({ nav, backgroundImg, HeadComponent, children, Footer, ...props }) => (
-  <StyledBaseTemplate {...props} backgroundImg={backgroundImg}>
-    {nav && <NavBar />}
-    {HeadComponent && <HeadComponent />}
-    <StyledContent {...props}>{children}</StyledContent>
-    {Footer && <StyledFooter>{Footer}</StyledFooter>}
-  </StyledBaseTemplate>
-))
+export default observer(
+  ({ nav, backgroundImg, HeadComponent, children, Footer, templateStyle, ...props }) => (
+    <StyledBaseTemplate {...props} backgroundImg={backgroundImg}>
+      {nav && <NavBar />}
+      {HeadComponent && <HeadComponent />}
+      <StyledContent templateStyle={templateStyle}>{children}</StyledContent>
+      {Footer && <StyledFooter>{Footer}</StyledFooter>}
+    </StyledBaseTemplate>
+  )
+)

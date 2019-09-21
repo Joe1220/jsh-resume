@@ -5,11 +5,15 @@ import { IconNav } from "components/molecules"
 import Theme from "config/styles"
 import JSON from "config/resume.json"
 
+const basetemplateStyle = `
+  height: 100vh;
+`
+
 const Home: React.SFC = () => {
   return (
     <BaseTemplate
       backgroundImg={"/static/images/background.jpg"}
-      minHeight="100vh"
+      templateStyle={basetemplateStyle}
       id="HOME"
       Footer={
         <Link href="#ABOUT">
