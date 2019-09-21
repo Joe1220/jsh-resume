@@ -1,5 +1,5 @@
 import { LabelTemplate } from "components/templates"
-import { P, Icon, Label } from "components/atoms"
+import { P, Img, Label } from "components/atoms"
 import Theme from "config/styles"
 import { SeparateTexts, PList } from "components/molecules"
 import RESUME from "config/resume.json"
@@ -11,13 +11,7 @@ const Home: React.SFC = () => {
   return (
     <LabelTemplate bgColor={Theme.colors.lightBlack} id="ABOUT">
       <div className="first-column">
-        <Icon
-          isborder
-          alt="my picture"
-          width="8.3rem"
-          height="8.3rem"
-          src={RESUME.basics.picture}
-        />
+        <Img isborder alt="my picture" width="8.3rem" height="8.3rem" src={RESUME.basics.picture} />
       </div>
       <div className="last-column">
         <div>
