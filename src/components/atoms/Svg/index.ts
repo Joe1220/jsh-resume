@@ -1,6 +1,7 @@
 export interface ISvg {
   size?: string
   color?: string
+  className?: string
 }
 
 /**
@@ -13,4 +14,5 @@ export { default as Github } from "./Github"
 export { default as Facebook } from "./Facebook"
 export { default as Medium } from "./Medium"
 export { default as DownArrow } from "./DownArrow"
+export { default as UpArrow } from "./UpArrow"
 export { default as Tag } from "./Tag"

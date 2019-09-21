@@ -2,6 +2,7 @@ export { default as NavBar } from "./NavBar"
 export { default as InfoGroup } from "./InfoGroup"
 export { default as SkillList } from "./SkillList"
 export { default as PortfolioList } from "./PortfolioList"
+export { default as Footer } from "./Footer"
 
 // one page 구성들
 export { default as Home } from "./pages/Home"

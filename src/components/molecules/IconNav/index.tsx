@@ -23,9 +23,9 @@ const StyledSpan = styled("ul")`
   }
 `
 
-const IconNav: React.SFC<ISvg> = ({ color = Theme.colors.white, size }) => {
+const IconNav: React.SFC<ISvg> = ({ className, color = Theme.colors.white, size }) => {
   return (
-    <StyledSpan>
+    <StyledSpan className={className}>
       <A href="mailto: jsh901220@gmail.com">
         <MailSvg size={size} color={color} />
       </A>
