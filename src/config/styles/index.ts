@@ -1,6 +1,7 @@
 const myThemes = {
   colors: {
     white: "#FFFFFF",
+    thickWhite: "rgb(235, 238, 238)",
     black: "#000000",
     lightBlack: "#333333",
     grey: "#DCDCDC",
@@ -17,12 +18,13 @@ const myThemes = {
   },
   iconSize: {
     sm: "1.7rem",
-    base: "3.4rem"
+    base: "3.4rem",
+    xxlg: "10rem"
   },
   spaces: {
     inputPadding: ".375rem .75rem",
     buttonPadding: ".5rem .5rem",
-    resumeSectionPadding: "3.4rem 0 4rem 0",
+    resumeSectionPadding: "3.4rem 8rem 3rem 8rem",
     sm: "0.2rem",
     base: "0.5rem",
     lg: "1rem",
