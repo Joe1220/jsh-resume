@@ -1,6 +1,7 @@
 import React from "react"
 import { ThemeProvider } from "styled-components"
-import App from "next/app"
+import App, { Container } from "next/app"
+import Head from "next/head"
 import { Provider, observer } from "mobx-react"
 
 import rootStore from "../../src/stores/RootStore"
@@ -18,10 +19,13 @@ class CustomApp extends App {
     return (
       <Provider {...rootStore}>
         <ThemeProvider theme={themes}>
-          <>
+          <Container>
+            <Head>
+              <title>JSH Resume</title>
+            </Head>
             <GlobalStyles />
             <Component {...pageProps} />
-          </>
+          </Container>
         </ThemeProvider>
       </Provider>
     )

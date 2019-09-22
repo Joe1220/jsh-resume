@@ -9,9 +9,9 @@ export default class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
-          <title>JSH Resume</title>
           <meta name="author" content={"Joe1220"} />
           <link rel="manifest" href="/static/manifest.json" />
+          <link rel="shortcut icon" href="/static/images/192x192.png" />
           <meta name="theme-color" content="black" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta
