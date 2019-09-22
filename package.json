@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "express": "^4.17.1",
     "mobx": "^5.13.0",
     "mobx-react": "^6.1.3",
     "moment": "^2.24.0",
@@ -18,7 +19,7 @@
     "styled-reset": "^4.0.0"
   },
   "scripts": {
-    "dev": "rimraf ./.next && next",
+    "dev": "rimraf ./.next && node server.js",
     "build": "next build",
     "start": "next start",
     "test": "jest",
