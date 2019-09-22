@@ -18,6 +18,7 @@ export default class MyDocument extends Document {
             name="description"
             content="조승현의 웹 프론트엔드 개발자 이력서입니다. 잘 부탁드립니다."
           />
+          <meta name="kewords" content="web, web frontend, resume" />
         </Head>
         <body>
           <Main />
