@@ -1,6 +1,6 @@
 import React from "react"
 import { ThemeProvider } from "styled-components"
-import App, { Container } from "next/app"
+import App from "next/app"
 import Head from "next/head"
 import { Provider, observer } from "mobx-react"
 
@@ -14,18 +14,27 @@ class CustomApp extends App {
     super(props)
   }
 
+  componentDidMount() {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("/sw.js")
+        .then(result => console.log("SW Registered: ", result))
+        .catch(error => console.log("Can't register SW: ", error))
+    }
+  }
+
   render() {
     const { Component, pageProps } = this.props
     return (
       <Provider {...rootStore}>
         <ThemeProvider theme={themes}>
-          <Container>
+          <>
             <Head>
               <title>JSH Resume</title>
             </Head>
             <GlobalStyles />
             <Component {...pageProps} />
-          </Container>
+          </>
         </ThemeProvider>
       </Provider>
     )
