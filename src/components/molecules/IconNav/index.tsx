@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
 import { A } from "components/atoms"
-import { MailSvg, Github, Facebook, Medium } from "components/atoms/Svg"
+import { MailSvg, Github, Facebook, Medium, Tree } from "components/atoms/Svg"
 import { ISvg } from "components/atoms/Svg"
 import Theme from "config/styles"
+import { links } from "config/resume.json"
 
 const StyledSpan = styled("ul")`
   display: flex;
@@ -26,17 +27,20 @@ const StyledSpan = styled("ul")`
 const IconNav: React.SFC<ISvg> = ({ className, color = Theme.colors.white, size }) => {
   return (
     <StyledSpan className={className}>
-      <A href="mailto: jsh901220@gmail.com">
+      <A href={links.mail}>
         <MailSvg size={size} color={color} />
       </A>
-      <A href="https://github.com/Joe1220">
+      <A href={links.github}>
         <Github size={size} color={color} />
       </A>
-      <A href="https://www.facebook.com/sleep.joe">
+      <A href={links.facebook}>
         <Facebook size={size} color={color} />
       </A>
-      <A href="https://medium.com/@jsh901220">
+      <A href={links.medium}>
         <Medium size={size} color={color} />
+      </A>
+      <A href={links.tree}>
+        <Tree size={size} color={color} />
       </A>
     </StyledSpan>
   )

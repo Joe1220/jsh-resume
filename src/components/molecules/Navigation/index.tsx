@@ -6,24 +6,26 @@ import { Nav, Link, A } from "components/atoms"
 const Navigation: React.FC = observer(() => {
   return (
     <Nav>
-      <li>
-        <Link href="/">HOME</Link>
-      </li>
-      <li>
-        <Link href="/#ABOUT">ABOUT</Link>
-      </li>
-      <li>
-        <Link href="/#WORK">WORK</Link>
-      </li>
-      <li>
-        <Link href="/#EDUCATION">EDUCATION</Link>
-      </li>
-      <li>
-        <Link href="/#SKILLS">SKILLS</Link>
-      </li>
-      <li>
-        <Link href="/#PORTFOLIO">PORTFOLIO</Link>
-      </li>
+      <ul>
+        <li>
+          <Link href="/">HOME</Link>
+        </li>
+        <li>
+          <Link href="/#ABOUT">ABOUT</Link>
+        </li>
+        <li>
+          <Link href="/#WORK">WORK</Link>
+        </li>
+        <li>
+          <Link href="/#EDUCATION">EDUCATION</Link>
+        </li>
+        <li>
+          <Link href="/#SKILLS">SKILLS</Link>
+        </li>
+        <li>
+          <Link href="/#PORTFOLIO">PORTFOLIO</Link>
+        </li>
+      </ul>
     </Nav>
   )
 })

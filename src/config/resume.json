@@ -13,6 +13,13 @@
       "city": "Seoul, Republic Of Korea"
     }
   },
+  "links": {
+    "mail": "mailto: jsh901220@gmail.com",
+    "github": "https://github.com/Joe1220",
+    "facebook": "https://www.facebook.com/sleep.joe",
+    "medium": "https://medium.com/@jsh901220",
+    "tree": "https://joe901220@bitbucket.org"
+  },
   "work": [
     {
       "title": "(주)에스원",
