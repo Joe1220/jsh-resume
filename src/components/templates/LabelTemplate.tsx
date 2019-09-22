@@ -31,7 +31,7 @@ const StyledLabelContent = styled("div")<IStyledLabelContent>`
 
   .first-column {
     min-width: 13%;
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       display: none;
     }
   }

@@ -24,7 +24,6 @@ const Home: React.SFC = () => {
           <Label thick white lg>
             Contact Details
           </Label>
-          <PList texts={RESUME.basics.summary} lightGrey />
           <P {...useColorChange1}>{RESUME.basics.email}</P>
           <P {...useColorChange2}>{RESUME.basics.phone}</P>
         </div>

@@ -15,6 +15,14 @@ const StyledSeparateTexts = styled("div")`
   p > span {
     margin: ${props => props.theme.spaces.lg};
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    span {
+      display: none;
+    }
+  }
 `
 
 /**

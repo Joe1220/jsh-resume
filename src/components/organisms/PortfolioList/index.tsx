@@ -8,7 +8,11 @@ const StyledPortfolioList = styled("div")`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: ${props => props.theme.spaces.lg};
-  grid-template-rows: minmax(170px, 230px);
+  grid-template-rows: minmax(170px, 200px);
+
+  @media (max-width: 768px) {
+    grid-template-rows: minmax(70px, 100px);
+  }
 `
 
 export default () => {

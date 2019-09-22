@@ -20,7 +20,7 @@ const StyledBaseTemplate = styled("div")<IStyledBaseTemplate>`
   flex-direction: column;
   box-sizing: border-box;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     h1 {
       font-size: 2.6rem;
     }

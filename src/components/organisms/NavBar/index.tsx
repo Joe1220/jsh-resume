@@ -16,6 +16,13 @@ const StyledNavBar = styled("header")`
     color: ${props => props.theme.colors.white};
     padding: 0.7rem 0.9rem;
   }
+
+  @media (max-width: 1200px) {
+    a {
+      font-size: 0.8;
+      margin-right: ${props => props.theme.spaces.sm};
+    }
+  }
 `
 
 const NavBar: React.FC = observer(() => {
