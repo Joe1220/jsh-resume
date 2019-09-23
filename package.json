@@ -1,9 +1,9 @@
 {
-  "name": "next-client-boilerplate",
+  "name": "jshresume",
   "version": "1.0.0",
-  "description": "gql + typescript boilerplate",
+  "description": "next + typescript를 이용한 이력서",
   "main": "index.js",
-  "repository": "https://github.com/Joe1220/next-client-boilerplate.git",
+  "repository": "https://github.com/Joe1220/jshresume.git",
   "author": "Joe1220 <joe1220@daum.net>",
   "license": "MIT",
   "private": false,
