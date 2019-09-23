@@ -108,6 +108,10 @@
           "percent": "50%"
         },
         {
+          "name": "nextjs",
+          "percent": "50%"
+        },
+        {
           "name": "SASS(scss)",
           "percent": "50%"
         }
@@ -149,6 +153,18 @@
         "thumb": "https://lh3.googleusercontent.com/UHFkk-NO7Pc78bIyzRNBQOM2rr96qnRdr7HGADlip3dDJejwoVpuZdTKbixmNsHfmSc"
       },
       "category": "React, React-Native, Koa, Mobx, Styled-Components, Nginx, firebase"
+    },
+    {
+      "title": "이력서 작성",
+      "date": "2019-09",
+      "website": "https://jshresume.joe12201.now.sh/",
+      "github": "https://github.com/Joe1220/jsh-resume.git",
+      "summary": "nextjs, typescript, react hooks를 이용하여 작성한 이력서입니다. pwa를 이용하여 앱작동, google chrome audits를 이용하여 최적화 하였습니다.",
+      "image": {
+        "modal": "https://png.pngtree.com/png-vector/20190501/ourlarge/pngtree-vector-resume-icon-png-image_1018862.jpg",
+        "thumb": "https://png.pngtree.com/png-vector/20190501/ourlarge/pngtree-vector-resume-icon-png-image_1018862.jpg"
+      },
+      "category": "React, Nextjs, Typescript, hooks, Styled-Components"
     }
   ],
   "languages": [
