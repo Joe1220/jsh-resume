@@ -1,16 +1,18 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 interface MyProps {
   children: any
 }
 
-const StyledNav = styled('nav')<MyProps>`
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  background: inherit;
+const StyledNav = styled("nav")<MyProps>`
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background: inherit;
+  }
 
-  & > li {
+  li {
     margin-right: ${props => props.theme.spaces.lg};
     &:last-child {
       margin: 0;

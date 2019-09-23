@@ -1,7 +1,8 @@
 import styled, { css } from "styled-components"
 import Link from "next/link"
 
-import { UseHoverFadeIn } from "utils/hooks"
+import { UseColorChange } from "utils/hooks"
+import Theme from "config/styles"
 
 interface IAProps {
   fontSize?: string
@@ -43,10 +44,10 @@ const StyledLink = styled("a")<IAProps>`
 `
 
 const CustomLink: React.SFC<ILinkProps> = ({ href, as, className, children, ...props }) => {
-  const halfFadeInHover = UseHoverFadeIn()
+  const useColorChange = UseColorChange(Theme.colors.white, Theme.colors.purpleBlue)
   return (
     <Link href={href} as={as}>
-      <StyledLink {...props} {...halfFadeInHover} className={className}>
+      <StyledLink {...props} {...useColorChange} className={className}>
         {children}
       </StyledLink>
     </Link>
