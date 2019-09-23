@@ -18,7 +18,6 @@ class CustomApp extends App {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
         .register("/sw.js")
-        .then(result => console.log("SW Registered: ", result))
         .catch(error => console.log("Can't register SW: ", error))
     }
   }
