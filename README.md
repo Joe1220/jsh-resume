@@ -39,3 +39,7 @@
 #### 1) pwa: service worker offline 작업 중 에러
 
 #### 2) test 추가
+
+![1](https://user-images.githubusercontent.com/30386090/72730601-07040c00-3bd5-11ea-89bf-677c40f33b49.PNG)
+![2](https://user-images.githubusercontent.com/30386090/72730602-079ca280-3bd5-11ea-830e-1ad27d43c19b.PNG)
+![3](https://user-images.githubusercontent.com/30386090/72730603-079ca280-3bd5-11ea-8476-739bc167a870.PNG)
