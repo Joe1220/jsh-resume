@@ -25,7 +25,6 @@ const Home: React.SFC = () => {
             Contact Details
           </Label>
           <P {...useColorChange1}>{RESUME.basics.email}</P>
-          <P {...useColorChange2}>{RESUME.basics.phone}</P>
         </div>
       </div>
     </LabelTemplate>
