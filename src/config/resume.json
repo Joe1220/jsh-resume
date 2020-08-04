@@ -99,6 +99,10 @@
           "percent": "65%"
         },
         {
+          "name": "Redux(Redux-saga)",
+          "percent": "65%"
+        },
+        {
           "name": "styled-components",
           "percent": "55%"
         },
@@ -162,6 +166,18 @@
       "image": {
         "modal": "https://png.pngtree.com/png-vector/20190501/ourlarge/pngtree-vector-resume-icon-png-image_1018862.jpg",
         "thumb": "https://png.pngtree.com/png-vector/20190501/ourlarge/pngtree-vector-resume-icon-png-image_1018862.jpg"
+      },
+      "category": "React, Nextjs, Typescript, hooks, Styled-Components"
+    },
+    {
+      "title": "f watch",
+      "date": "2020-04",
+      "website": "https://f-watch.joe12201.now.sh/",
+      "github": "https://github.com/Joe1220/funny_timer",
+      "summary": "nextjs, typescript, redux-sag, hooks를 이용한 simple timer 입니다.",
+      "image": {
+        "modal": "https://addons.cdn.mozilla.net/user-media/previews/full/198/198728.png?modified=1543521100",
+        "thumb": "https://addons.cdn.mozilla.net/user-media/previews/full/198/198728.png?modified=1543521100"
       },
       "category": "React, Nextjs, Typescript, hooks, Styled-Components"
     }

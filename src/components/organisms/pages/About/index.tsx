@@ -7,7 +7,6 @@ import { UseColorChange } from "utils/hooks"
 
 const Home: React.SFC = () => {
   const useColorChange1 = UseColorChange(Theme.colors.white, Theme.colors.purpleBlue)
-  const useColorChange2 = UseColorChange(Theme.colors.white, Theme.colors.purpleBlue)
   return (
     <LabelTemplate bgColor={Theme.colors.lightBlack} id="ABOUT">
       <div className="first-column">
