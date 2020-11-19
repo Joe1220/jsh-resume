@@ -72,14 +72,15 @@
       "title": "skills",
       "summaries": [
         "HTML",
-        "Style:  주로 styled-components을 사용하며 scss도 사용합니다.",
-        "Javascript: Typescript와 같이 Front에서 다양한 이벤트, 스타일 구성을 담당합니다. React를 사용합니다.",
-        "Mobx: data state 관리. store와 model, repository(비즈니스 역할)분할",
-        "Git: bitbucket을 이용한 프로젝트 관리. github도 사용합니다.",
-        "React: Component구성, Router 처리, mobx를 이용한 state구성",
-        "React-Native: android 버전개발, navigation 구성",
+        "Style-Components, Scss",
+        "Javascript",
+        "Mobx",
+        "Redux",
+        "Git, Github",
+        "React",
+        "React-Native: android 버전개발",
         "Koa: api개발, middleware 처리, sequelize를 이용한 model구성. swagger를 사용하여 api 자동화",
-        "AWS: 배포할 때 사용합니다. ec2, nginx을 이용합니다."
+        "AWS: 주로 ec2를 사용"
       ],
       "skillDetails": [
         {
@@ -157,7 +158,6 @@
       },
       "category": "React, Mobx, Koa, Styled-Components, Socket.io, Nginx"
     },
-
     {
       "title": "이력서 작성",
       "date": "2019-09",
@@ -181,6 +181,18 @@
         "thumb": "https://addons.cdn.mozilla.net/user-media/previews/full/198/198728.png?modified=1543521100"
       },
       "category": "React, Nextjs, Typescript, hooks, Styled-Components"
+    },
+    {
+      "title": "tabata timer",
+      "date": "2020-11",
+      "website": "https://play.google.com/store/apps/details?id=com.tabata_timer/",
+      "github": "https://github.com/Joe1220/tabata_timer/",
+      "summary": "react-native, redux, redux-saga를 이용한 운동 tabata timer app(android only).",
+      "image": {
+        "modal": "https://play-lh.googleusercontent.com/bILXXYdRI5OW3oACq2JjXQnzrKqovc6UPIBDfzmMbGlUJaBr0nCpZ7r0G-HOzEZLi3c=w1281-h1327-rw",
+        "thumb": "https://play-lh.googleusercontent.com/6lyQ0YuFI2P3fY1Ytl5TEfwwh9F0GAwj1x2Pe5QS3HdJlCDNvZJldLvWMxYV_0dW7XY=s180-rw"
+      },
+      "category": "React, React-Native, Redux, Redux-Saga, Styled-Components, Fastlane"
     }
   ],
   "languages": [
