@@ -8,5 +8,9 @@ export default () => {
     setIsShow(!isShow)
   }
 
-  return { isShow, toggleShow }
+  const closeModal = () => {
+    setIsShow(false)
+  }
+
+  return { isShow, toggleShow, closeModal }
 }

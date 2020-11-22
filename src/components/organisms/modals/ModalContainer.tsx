@@ -2,6 +2,7 @@ import styled, { css } from "styled-components"
 import ReactDOM from "react-dom"
 
 import { UseModal } from "utils/hooks"
+import { EventHandler, useEffect, useRef } from "react"
 
 interface IModalContainer {
   isShow: boolean
@@ -40,9 +41,11 @@ const StyledModalContent = styled("div")`
  * 전체 modal의 컴포넌트
  * utils -> hooks의 modal hooks로 show를 결정
  * 다른 모달창은 organisms -> modals내에 설정한다.
+ * ref 로 outside 클릭설정
  */
 const ModalContainer = (Component) => ({ children, ...props }) => {
   const { isShow, toggleShow } = UseModal()
+
   return (
     <>
       <span style={{ cursor: "pointer" }} onClick={toggleShow}>
@@ -61,10 +64,22 @@ const ModalContainer = (Component) => ({ children, ...props }) => {
 }
 
 const ModalPortalContent = ({ Component, children, toggleShow, isShow, ...props }) => {
+  const ref = useRef(null)
+  const outsideClick = (e: any) => {
+    if (ref.current && !ref.current.contains(e.target)) {
+      toggleShow()
+    }
+  }
+  useEffect(() => {
+    document.addEventListener("click", outsideClick)
+    return () => {
+      document.removeEventListener("click", outsideClick)
+    }
+  })
   return isShow
     ? ReactDOM.createPortal(
         <StyledModalContainer isShow={isShow}>
-          <StyledModalContent>
+          <StyledModalContent ref={ref}>
             <Component {...props} />
           </StyledModalContent>
         </StyledModalContainer>,
