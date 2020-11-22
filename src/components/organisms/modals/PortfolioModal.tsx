@@ -1,15 +1,12 @@
 import styled, { css } from "styled-components"
 
-import { Img, P, A } from "components/atoms"
+import { P, A } from "components/atoms"
 import { Tag } from "components/atoms/Svg"
 import { ModalContainer } from "components/organisms"
 import { UseColorChange } from "utils/hooks"
 import Theme from "config/styles"
-
-interface IImage {
-  modal: string
-  thumb: string
-}
+import Carousel from "components/molecules/Carousel"
+import { IImage } from "../../molecules/PortfolioItem/index"
 
 interface IPortfolioModal {
   title: string
@@ -37,21 +34,21 @@ const StlyeldPortfolioModal = styled("div")`
 `
 
 const StlyeldPortfolioModalContent = styled("div")<IStlyeldPortfolioModalContent>`
-  padding: ${props => props.theme.spaces.lg};
+  padding: ${(props) => props.theme.spaces.lg};
 
   svg {
     display: inline;
-    margin-right: ${props => props.theme.spaces.base};
+    margin-right: ${(props) => props.theme.spaces.base};
   }
 
-  ${props =>
+  ${(props) =>
     props.footer &&
     css`
       display: flex;
       flex-direction: row;
-      background: ${props => props.theme.colors.black};
+      background: ${(props) => props.theme.colors.black};
       & > a {
-        margin-right: ${props => props.theme.spaces.lg};
+        margin-right: ${(props) => props.theme.spaces.lg};
       }
     `}
 `
@@ -68,7 +65,7 @@ const PortfolioItem: React.SFC<IPortfolioModal> = ({
   return (
     <StlyeldPortfolioModal>
       <StlyeldPortfolioModalContent>
-        <Img src={image.modal} alt={title} width="100%" height="auto" />
+        <Carousel images={image.modals} />
       </StlyeldPortfolioModalContent>
       <StlyeldPortfolioModalContent>
         <P lg thick>

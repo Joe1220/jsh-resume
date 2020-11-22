@@ -7,7 +7,6 @@ const dateChangeFormat = (datetime: string) => {
   const d = moment(datetime, "YYYY-MM-DD")
 
   if (dateMatch(datetime)) return INVALID_TIME
-
   return d.format("MMM YYYY")
 }
 
@@ -20,7 +19,7 @@ const dateMatch = (dateTime: string) => {
 // "string으로 받은 날짜정보(ex - 2019-01, 2019-02)를 ,로 분할해 각각 날짜를 변경해 반환"
 // 날짜가 아니면 그대로 반환
 export const dateChangeFormatList = (dateTime: string) => {
-  const dTimes = dateTime.split(",").map(time => {
+  const dTimes = dateTime.split(",").map((time) => {
     return dateChangeFormat(time.trim())
   })
   return dTimes[0] + " - " + dTimes[1]

@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 import { Img, P } from "components/atoms"
 
-interface IImage {
-  modal: string
+export interface IImage {
+  modals: string[]
   thumb: string
 }
 

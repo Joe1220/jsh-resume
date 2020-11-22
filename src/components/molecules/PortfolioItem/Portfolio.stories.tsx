@@ -18,8 +18,9 @@ stories.add(
           "(Toy) socket을 적용한 간단한 web chat toy project입니다. React, Mobx, Koa(NODE), Nginx(EC2), Socket을 사용하였습니다. Styled-Components와 atomic-design, storybook을 사용하여 ui를 구현하였습니다."
         }
         image={{
-          modal:
-            "https://images.ctfassets.net/6m9bd13t776q/41NtbE9GNGkCmq2KSkMC6U/0d564b28bcc6ef07e8e6447194974e22/top-7-packaged-baby-foods-2160x1200.jpg?q=75",
+          modals: [
+            "https://images.ctfassets.net/6m9bd13t776q/41NtbE9GNGkCmq2KSkMC6U/0d564b28bcc6ef07e8e6447194974e22/top-7-packaged-baby-foods-2160x1200.jpg?q=75"
+          ],
           thumb:
             "https://images.ctfassets.net/6m9bd13t776q/41NtbE9GNGkCmq2KSkMC6U/0d564b28bcc6ef07e8e6447194974e22/top-7-packaged-baby-foods-2160x1200.jpg?q=75"
         }}

@@ -8,8 +8,8 @@ import { basics } from "config/resume.json"
 
 const StlyedContainer = styled("div")`
   position: relative;
-  background: ${props => props.theme.colors.black};
-  padding: ${props => props.theme.spaces.resumeSectionPadding};
+  background: ${(props) => props.theme.colors.black};
+  padding: ${(props) => props.theme.spaces.resumeSectionPadding};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,12 +26,12 @@ const StlyedContainer = styled("div")`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: ${props => props.theme.colors.lightGrey};
-    margin-top: ${props => props.theme.spaces.lg};
+    color: ${(props) => props.theme.colors.lightGrey};
+    margin-top: ${(props) => props.theme.spaces.lg};
     a {
-      color: ${props => props.theme.colors.white};
+      color: ${(props) => props.theme.colors.white};
       font-size: 1rem;
-      margin-left: ${props => props.theme.spaces.base};
+      margin-left: ${(props) => props.theme.spaces.base};
     }
   }
 `
@@ -39,15 +39,15 @@ const StlyedContainer = styled("div")`
 const StlyedIconNav = styled(IconNav)`
   a {
     &:not(:last-child) {
-      margin-right: ${props => props.theme.spaces.xlg};
+      margin-right: ${(props) => props.theme.spaces.xlg};
     }
     path,
     svg {
-      fill: ${props => props.theme.colors.lightGrey};
+      fill: ${(props) => props.theme.colors.lightGrey};
       transition: fill 0.3s;
 
       &:hover {
-        fill: ${props => props.theme.colors.purpleBlue};
+        fill: ${(props) => props.theme.colors.purpleBlue};
       }
     }
   }

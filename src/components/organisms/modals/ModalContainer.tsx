@@ -15,10 +15,9 @@ const StyledModalContainer = styled("div")<IModalContainer>`
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  cursor: pointer;
-  padding: ${props => props.theme.spaces.base};
+  padding: ${(props) => props.theme.spaces.base};
 
-  ${props =>
+  ${(props) =>
     props.isShow &&
     css`
       opacity: 1;
@@ -34,7 +33,7 @@ const StyledModalContent = styled("div")`
   overflow-y: auto;
   min-width: 400px;
   width: 478px;
-  background: ${props => props.theme.colors.white};
+  background: ${(props) => props.theme.colors.white};
 `
 
 /**
@@ -42,7 +41,7 @@ const StyledModalContent = styled("div")`
  * utils -> hooks의 modal hooks로 show를 결정
  * 다른 모달창은 organisms -> modals내에 설정한다.
  */
-const ModalContainer = Component => ({ children, ...props }) => {
+const ModalContainer = (Component) => ({ children, ...props }) => {
   const { isShow, toggleShow } = UseModal()
   return (
     <>
@@ -64,7 +63,7 @@ const ModalContainer = Component => ({ children, ...props }) => {
 const ModalPortalContent = ({ Component, children, toggleShow, isShow, ...props }) => {
   return isShow
     ? ReactDOM.createPortal(
-        <StyledModalContainer isShow={isShow} onClick={toggleShow}>
+        <StyledModalContainer isShow={isShow}>
           <StyledModalContent>
             <Component {...props} />
           </StyledModalContent>
