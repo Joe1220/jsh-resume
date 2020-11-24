@@ -12,7 +12,7 @@ const CarouselComp: React.FC<CarouselProps> = ({
 }) => {
   return (
     <Container width={width} height={height}>
-      <Carousel>
+      <Carousel autoGenerateStyleTag={true} autoplay={true} wrapAround={true}>
         {images.map((image, index) => (
           <Img src={image} key={index} width={width} height={height} />
         ))}
