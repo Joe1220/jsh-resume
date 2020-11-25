@@ -1,6 +1,6 @@
 # web developer 조승현 resume
 
-https://jsh-resume.joe12201.now.sh/
+https://jsh-resume-k11h3v9co.vercel.app/
 
 #### 이 repository는 프론트엔드 웹 개발자 jo seung hyun(조승현)이 작성한
 
