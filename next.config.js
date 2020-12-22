@@ -11,6 +11,6 @@ module.exports = {
 
     return config
   },
-  assetPrefix: isProd ? "https://cdn.statically.io/gh/NaveenDA/jsh-resume/" : "",
+  assetPrefix: isProd ? "https://cdn.statically.io/gh/Joe1220/jsh-resume/" : "",
   target: "serverless"
 }
