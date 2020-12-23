@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "BYo/");
+/******/ 	return __webpack_require__(__webpack_require__.s = "dGhX");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2793,241 +2793,6 @@ function parseTokenList (str) {
   return list
 }
 
-
-/***/ }),
-
-/***/ "BYo/":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var _document_tsx_namespaceObject = {};
-__webpack_require__.r(_document_tsx_namespaceObject);
-__webpack_require__.d(_document_tsx_namespaceObject, "default", function() { return _document_tsx_MyDocument; });
-
-// EXTERNAL MODULE: external "url"
-var external_url_ = __webpack_require__("bzos");
-
-// EXTERNAL MODULE: ./node_modules/next-server/dist/server/render.js
-var render = __webpack_require__("R+7f");
-
-// EXTERNAL MODULE: ./node_modules/next-server/dist/server/send-html.js
-var send_html = __webpack_require__("I8F5");
-
-// EXTERNAL MODULE: ./.next/build-manifest.json
-var build_manifest = __webpack_require__("LZ9C");
-
-// EXTERNAL MODULE: ./.next/react-loadable-manifest.json
-var react_loadable_manifest = __webpack_require__("67Bq");
-
-// EXTERNAL MODULE: ./node_modules/next/dist/pages/_document.js
-var _document = __webpack_require__("VDXt");
-var _document_default = /*#__PURE__*/__webpack_require__.n(_document);
-
-// EXTERNAL MODULE: ./node_modules/next/dist/pages/_error.js
-var _error = __webpack_require__("/a9y");
-var _error_default = /*#__PURE__*/__webpack_require__.n(_error);
-
-// EXTERNAL MODULE: ./pages/_app/index.tsx + 6 modules
-var _app = __webpack_require__("P9BO");
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js
-var get_own_property_descriptor = __webpack_require__("Jo+v");
-var get_own_property_descriptor_default = /*#__PURE__*/__webpack_require__.n(get_own_property_descriptor);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js
-var get_own_property_symbols = __webpack_require__("4mXO");
-var get_own_property_symbols_default = /*#__PURE__*/__webpack_require__.n(get_own_property_symbols);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js
-var keys = __webpack_require__("pLtp");
-var keys_default = /*#__PURE__*/__webpack_require__.n(keys);
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js
-var define_property = __webpack_require__("hfKm");
-var define_property_default = /*#__PURE__*/__webpack_require__.n(define_property);
-
-// CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    define_property_default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-// CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js
-
-
-
-
-function _objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    var ownKeys = keys_default()(source);
-
-    if (typeof get_own_property_symbols_default.a === 'function') {
-      ownKeys = ownKeys.concat(get_own_property_symbols_default()(source).filter(function (sym) {
-        return get_own_property_descriptor_default()(source, sym).enumerable;
-      }));
-    }
-
-    ownKeys.forEach(function (key) {
-      _defineProperty(target, key, source[key]);
-    });
-  }
-
-  return target;
-}
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__("q1tI");
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./node_modules/next/document.js
-var next_document = __webpack_require__("8cZr");
-var document_default = /*#__PURE__*/__webpack_require__.n(next_document);
-
-// CONCATENATED MODULE: ./pages/_document.tsx/index.tsx
-
-
-var __jsx = react_default.a.createElement;
-
-class _document_tsx_MyDocument extends document_default.a {
-  static async getInitialProps(ctx) {
-    const initialProps = await document_default.a.getInitialProps(ctx);
-    return _objectSpread({}, initialProps);
-  }
-
-  render() {
-    return __jsx(next_document["Html"], {
-      lang: "ko"
-    }, __jsx(next_document["Head"], null, __jsx("meta", {
-      name: "author",
-      content: "Joe1220"
-    }), __jsx("meta", {
-      name: "keywords",
-      content: "web, web frontend, resume"
-    }), __jsx("meta", {
-      name: "theme-color",
-      content: "black"
-    }), __jsx("meta", {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1"
-    }), __jsx("meta", {
-      name: "description",
-      content: "\uC870\uC2B9\uD604\uC758 \uC6F9 \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C\uC790 \uC774\uB825\uC11C\uC785\uB2C8\uB2E4. \uC798 \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
-    }), __jsx("link", {
-      rel: "manifest",
-      href: "/static/manifest.json"
-    }), __jsx("link", {
-      rel: "shortcut icon",
-      href: "/static/images/192x192.png"
-    }), __jsx("link", {
-      rel: "apple-touch-icon",
-      sizes: "180x180",
-      href: "/favicons/apple-touch-icon.png"
-    }), __jsx("link", {
-      rel: "icon",
-      type: "image/png",
-      sizes: "32x32",
-      href: "/favicons/favicon-32x32.png"
-    }), __jsx("link", {
-      rel: "icon",
-      type: "image/png",
-      sizes: "16x16",
-      href: "/favicons/favicon-16x16.png"
-    }), __jsx("link", {
-      rel: "manifest",
-      href: "/favicons/site.webmanifest"
-    })), __jsx("body", null, __jsx(next_document["Main"], null), __jsx(next_document["NextScript"], null)));
-  }
-
-}
-// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-serverless-loader.js?page=%2F_document.tsx&absolutePagePath=private-next-pages%2F_document.tsx%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app%2Findex.tsx&absoluteDocumentPath=next%2Fdist%2Fpages%2F_document&absoluteErrorPath=next%2Fdist%2Fpages%2F_error&distDir=private-dot-next&buildId=xBi9lqGS8XD8PjOlmiD7o&assetPrefix=&generateEtags=true&ampBindInitData=false&canonicalBase=
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_xBi9lqGS8XD8PjOlmiD7o_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_xBi9lqGS8XD8PjOlmiD7o_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_render; });
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    const Component = _document_tsx_MyDocument
-    /* harmony default export */ var next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_xBi9lqGS8XD8PjOlmiD7o_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_ = __webpack_exports__["default"] = (Component);
-    const config = _document_tsx_namespaceObject['confi' + 'g'] || {}
-    const next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_xBi9lqGS8XD8PjOlmiD7o_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_app = _app["a" /* default */]
-    async function renderReqToHTML(req, res, fromExport) {
-      const options = {
-        App: _app["a" /* default */],
-        Document: _document_default.a,
-        buildManifest: build_manifest,
-        reactLoadableManifest: react_loadable_manifest,
-        canonicalBase: "",
-        buildId: "xBi9lqGS8XD8PjOlmiD7o",
-        assetPrefix: "",
-        ampBindInitData: false
-      }
-      const parsedUrl = Object(external_url_["parse"])(req.url, true)
-      const renderOpts = Object.assign(
-        {
-          Component,
-          pageConfig: config,
-          dataOnly: req.headers && (req.headers.accept || '').indexOf('application/amp.bind+json') !== -1,
-          nextExport: fromExport
-        },
-        options,
-      )
-      try {
-        
-        const params = {};
-        const result = await Object(render["renderToHTML"])(req, res, "/_document.tsx", Object.assign({}, parsedUrl.query, params), renderOpts)
-
-        if (fromExport) return { html: result, renderOpts }
-        return result
-      } catch (err) {
-        if (err.code === 'ENOENT') {
-          res.statusCode = 404
-          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-            Component: _error_default.a
-          }))
-          return result
-        } else {
-          console.error(err)
-          res.statusCode = 500
-          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-            Component: _error_default.a,
-            err
-          }))
-          return result
-        }
-      }
-    }
-    async function next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_xBi9lqGS8XD8PjOlmiD7o_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_render (req, res) {
-      try {
-        const html = await renderReqToHTML(req, res)
-        Object(send_html["sendHTML"])(req, res, html, {generateEtags: true})
-      } catch(err) {
-        console.error(err)
-        res.statusCode = 500
-        res.end('Internal Server Error')
-      }
-    }
-  
 
 /***/ }),
 
@@ -14842,6 +14607,241 @@ var store = global[SHARED] || (global[SHARED] = {});
 
 module.exports = __webpack_require__("0gFS")
 
+
+/***/ }),
+
+/***/ "dGhX":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var _document_tsx_namespaceObject = {};
+__webpack_require__.r(_document_tsx_namespaceObject);
+__webpack_require__.d(_document_tsx_namespaceObject, "default", function() { return _document_tsx_MyDocument; });
+
+// EXTERNAL MODULE: external "url"
+var external_url_ = __webpack_require__("bzos");
+
+// EXTERNAL MODULE: ./node_modules/next-server/dist/server/render.js
+var render = __webpack_require__("R+7f");
+
+// EXTERNAL MODULE: ./node_modules/next-server/dist/server/send-html.js
+var send_html = __webpack_require__("I8F5");
+
+// EXTERNAL MODULE: ./.next/build-manifest.json
+var build_manifest = __webpack_require__("LZ9C");
+
+// EXTERNAL MODULE: ./.next/react-loadable-manifest.json
+var react_loadable_manifest = __webpack_require__("67Bq");
+
+// EXTERNAL MODULE: ./node_modules/next/dist/pages/_document.js
+var _document = __webpack_require__("VDXt");
+var _document_default = /*#__PURE__*/__webpack_require__.n(_document);
+
+// EXTERNAL MODULE: ./node_modules/next/dist/pages/_error.js
+var _error = __webpack_require__("/a9y");
+var _error_default = /*#__PURE__*/__webpack_require__.n(_error);
+
+// EXTERNAL MODULE: ./pages/_app/index.tsx + 6 modules
+var _app = __webpack_require__("P9BO");
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js
+var get_own_property_descriptor = __webpack_require__("Jo+v");
+var get_own_property_descriptor_default = /*#__PURE__*/__webpack_require__.n(get_own_property_descriptor);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js
+var get_own_property_symbols = __webpack_require__("4mXO");
+var get_own_property_symbols_default = /*#__PURE__*/__webpack_require__.n(get_own_property_symbols);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js
+var keys = __webpack_require__("pLtp");
+var keys_default = /*#__PURE__*/__webpack_require__.n(keys);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js
+var define_property = __webpack_require__("hfKm");
+var define_property_default = /*#__PURE__*/__webpack_require__.n(define_property);
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    define_property_default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+// CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = keys_default()(source);
+
+    if (typeof get_own_property_symbols_default.a === 'function') {
+      ownKeys = ownKeys.concat(get_own_property_symbols_default()(source).filter(function (sym) {
+        return get_own_property_descriptor_default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__("q1tI");
+var react_default = /*#__PURE__*/__webpack_require__.n(react);
+
+// EXTERNAL MODULE: ./node_modules/next/document.js
+var next_document = __webpack_require__("8cZr");
+var document_default = /*#__PURE__*/__webpack_require__.n(next_document);
+
+// CONCATENATED MODULE: ./pages/_document.tsx/index.tsx
+
+
+var __jsx = react_default.a.createElement;
+
+class _document_tsx_MyDocument extends document_default.a {
+  static async getInitialProps(ctx) {
+    const initialProps = await document_default.a.getInitialProps(ctx);
+    return _objectSpread({}, initialProps);
+  }
+
+  render() {
+    return __jsx(next_document["Html"], {
+      lang: "ko"
+    }, __jsx(next_document["Head"], null, __jsx("meta", {
+      name: "author",
+      content: "Joe1220"
+    }), __jsx("meta", {
+      name: "keywords",
+      content: "web, web frontend, resume"
+    }), __jsx("meta", {
+      name: "theme-color",
+      content: "black"
+    }), __jsx("meta", {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1"
+    }), __jsx("meta", {
+      name: "description",
+      content: "\uC870\uC2B9\uD604\uC758 \uC6F9 \uD504\uB860\uD2B8\uC5D4\uB4DC \uAC1C\uBC1C\uC790 \uC774\uB825\uC11C\uC785\uB2C8\uB2E4. \uC798 \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
+    }), __jsx("link", {
+      rel: "manifest",
+      href: "/static/manifest.json"
+    }), __jsx("link", {
+      rel: "shortcut icon",
+      href: "/static/images/192x192.png"
+    }), __jsx("link", {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: "/favicons/apple-touch-icon.png"
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/favicons/favicon-32x32.png"
+    }), __jsx("link", {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/favicons/favicon-16x16.png"
+    }), __jsx("link", {
+      rel: "manifest",
+      href: "/favicons/site.webmanifest"
+    })), __jsx("body", null, __jsx(next_document["Main"], null), __jsx(next_document["NextScript"], null)));
+  }
+
+}
+// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-serverless-loader.js?page=%2F_document.tsx&absolutePagePath=private-next-pages%2F_document.tsx%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app%2Findex.tsx&absoluteDocumentPath=next%2Fdist%2Fpages%2F_document&absoluteErrorPath=next%2Fdist%2Fpages%2F_error&distDir=private-dot-next&buildId=wvekOr6xpaF1KrvMAZzw_&assetPrefix=&generateEtags=true&ampBindInitData=false&canonicalBase=
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_wvekOr6xpaF1KrvMAZzw_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_wvekOr6xpaF1KrvMAZzw_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_render; });
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    const Component = _document_tsx_MyDocument
+    /* harmony default export */ var next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_wvekOr6xpaF1KrvMAZzw_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_ = __webpack_exports__["default"] = (Component);
+    const config = _document_tsx_namespaceObject['confi' + 'g'] || {}
+    const next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_wvekOr6xpaF1KrvMAZzw_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_app = _app["a" /* default */]
+    async function renderReqToHTML(req, res, fromExport) {
+      const options = {
+        App: _app["a" /* default */],
+        Document: _document_default.a,
+        buildManifest: build_manifest,
+        reactLoadableManifest: react_loadable_manifest,
+        canonicalBase: "",
+        buildId: "wvekOr6xpaF1KrvMAZzw_",
+        assetPrefix: "",
+        ampBindInitData: false
+      }
+      const parsedUrl = Object(external_url_["parse"])(req.url, true)
+      const renderOpts = Object.assign(
+        {
+          Component,
+          pageConfig: config,
+          dataOnly: req.headers && (req.headers.accept || '').indexOf('application/amp.bind+json') !== -1,
+          nextExport: fromExport
+        },
+        options,
+      )
+      try {
+        
+        const params = {};
+        const result = await Object(render["renderToHTML"])(req, res, "/_document.tsx", Object.assign({}, parsedUrl.query, params), renderOpts)
+
+        if (fromExport) return { html: result, renderOpts }
+        return result
+      } catch (err) {
+        if (err.code === 'ENOENT') {
+          res.statusCode = 404
+          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+            Component: _error_default.a
+          }))
+          return result
+        } else {
+          console.error(err)
+          res.statusCode = 500
+          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+            Component: _error_default.a,
+            err
+          }))
+          return result
+        }
+      }
+    }
+    async function next_serverless_loaderpage_2F_document_tsx_absolutePagePath_private_next_pages_2F_document_tsx_2Findex_tsx_absoluteAppPath_private_next_pages_2F_app_2Findex_tsx_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_wvekOr6xpaF1KrvMAZzw_assetPrefix_generateEtags_true_ampBindInitData_false_canonicalBase_render (req, res) {
+      try {
+        const html = await renderReqToHTML(req, res)
+        Object(send_html["sendHTML"])(req, res, html, {generateEtags: true})
+      } catch(err) {
+        console.error(err)
+        res.statusCode = 500
+        res.end('Internal Server Error')
+      }
+    }
+  
 
 /***/ }),
 
