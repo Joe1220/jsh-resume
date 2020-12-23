@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default as BaseTemplate } from \"./BaseTemplate\";\nexport { default as LabelTemplate } from \"./LabelTemplate\";","map":null,"metadata":{},"sourceType":"module"}

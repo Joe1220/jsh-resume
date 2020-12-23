@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const CAROUSEL_SIZE = {\n  width: \"100%,\",\n  height: \"auto\"\n};\nexport const IMAGES_SAMPLE = [\"https://picsum.photos/id/1018/500/600/\", \"https://picsum.photos/id/1018/500/600/\", \"https://picsum.photos/id/1018/500/600/\"];","map":null,"metadata":{},"sourceType":"module"}
