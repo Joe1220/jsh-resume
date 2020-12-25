@@ -24,6 +24,10 @@ https://jsh-resume-k11h3v9co.vercel.app/
 
 #### 6) Pwa: 최적화 포함(예정)
 
+#### 7) CI/CI: Github-actions
+
+#### 8) release: use Vercel
+
 ---
 
 ## one page 구성
